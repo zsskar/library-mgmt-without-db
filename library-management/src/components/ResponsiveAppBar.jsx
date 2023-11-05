@@ -24,9 +24,11 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -36,6 +38,7 @@ function ResponsiveAppBar() {
   };
 
   return (
+    
     <AppBar position="static">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
