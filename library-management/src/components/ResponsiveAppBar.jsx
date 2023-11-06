@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    
+
     <AppBar position="static">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem  component={Link}    to={"/users/2323"} key={page} onClick={handleCloseNavMenu}>
+                <MenuItem  component={Link}  to={page === 'Add Book' ? '/addBook' :'/viewBooks'} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -118,12 +118,12 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+              <Button component={Link}  to={page === 'Add Book' ? '/addBook' :'/viewBooks'}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-              
+              {page}
               </Button>
             ))}
           </Box>
