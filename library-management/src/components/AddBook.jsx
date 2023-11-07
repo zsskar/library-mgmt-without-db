@@ -65,7 +65,7 @@ function AddBook()
         <form onSubmit={(e)=> submit(e)} >
            <div className="form-row">
               <div className="input-data">
-                 <input  name="bookName" type="text" required onChange={handleInput}
+                 <input disabled={params.id ? true : false} name="bookName" type="text" required onChange={handleInput}
                   value={books?.bookName} onInvalid={F => F.target.setCustomValidity('enter name here')} 
                   onInput={F => F.target.setCustomValidity('')}  />
                  <div className="underline"></div>
