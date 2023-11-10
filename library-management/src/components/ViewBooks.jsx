@@ -73,9 +73,6 @@ function ViewBooks() {
                 </table>
             </section>
                 : <h3 style={{ textAlign: 'center', lineHeight: 10 }}>No books available.</h3>}
-
-
-
         </div>
     );
 }
