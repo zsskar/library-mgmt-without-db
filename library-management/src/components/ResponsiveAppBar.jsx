@@ -46,7 +46,7 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            component={Link}  to={'/'}
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -91,18 +91,17 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem  component={Link}  to={page === 'Add Book' ? '/addBook' :'/viewBooks'} onClick={handleCloseNavMenu}>
+                <MenuItem  component={Link} key={page}  to={page === 'Add Book' ? '/addBook' :'/viewBooks'} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          <Typography
+          <Typography component={Link}  to={'/'}
             variant="h5"
             noWrap
-            component="a"
-       
+                
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
