@@ -112,7 +112,7 @@ function AddBook()
                  <div className="input-data" style={{float:'right'}}>
                     <div className="inner"></div>
                     <input type="submit" value="submit" />
-                    {/* <input type="submit" value="submit" /> */}
+                  
                  </div>
               </div>
               </div>
