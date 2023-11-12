@@ -6,12 +6,6 @@ function ViewBooks() {
 
     const [books,setBooks] = useState(booksData);
 
-    function viewBook(id) {
-        
-    }
-    function editBook(id) {
-        alert("editBook" + id);
-    }
     function deleteBook(id){
         // setBooks((prev) =>[...prev].filter(x => x.id !== id));
         let idx = booksData.indexOf(booksData.filter(x => x.id === id));
@@ -53,16 +47,19 @@ function ViewBooks() {
                                     <td>{book.writer}</td>
                                     <td>{book.description}</td>
                                     <td><div className="table__button-group">
-                                    <Link to={`/addBook/${book.id}`}>
-                                        <button id='view'>View</button>
-                                        </Link>
 
-                                        <button id='edit' onClick={() => {
-                                            editBook(book.id);
-                                        }}>Edit</button>
+                                    <Link to={`/addBook/view/${book.id}`}>
+                                        <button id='view'>View</button>
+                                    </Link>
+
+                                    <Link to={`/addBook/edit/${book.id}`}>
+                                        <button id='edit'>Edit</button>
+                                    </Link>
 
                                         <button id='delete' onClick={() => {
-                                            deleteBook(book.id);
+                                            if(window.confirm("Are you sure want to delete ?")){
+                                                deleteBook(book.id);
+                                            }
                                         }} >Delete</button></div></td>
                                         
                                 </tr>

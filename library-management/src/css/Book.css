@@ -221,15 +221,15 @@ td + td:not(:nth-last-child(2)) {
   color: #0989ab;
   opacity: 0.75;
 }
-.table__button-group a ~ a:before {
+/* .table__button-group a ~ a:before {
   content: "|";
   padding: 0 0.35rem;
-}
+} */
 
 tr:hover > td .table__button-group {
   visibility: visible;
 }
-.table__button-group button{
+.table__button-group Link button{
   background-color: white;
   border: none;
   display: flex;

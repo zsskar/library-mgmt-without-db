@@ -15,7 +15,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/addBook' element={<AddBook />} />
         <Route exact path='/viewBooks' element={<ViewBooks />} />
-        <Route exact path='/addBook/:id' element={<AddBook />} />
+        <Route exact path='/addBook/:action/:id' element={<AddBook />} />
         <Route path="*" element={<h1 style={{color:'red',textAlign:'center'}}>Path not resolved !</h1>} />
       </Routes>
 
