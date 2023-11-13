@@ -1,17 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import booksData from "./BooksData";
 import { Link } from "react-router-dom";
 
 function ViewBooks() {
 
-    const [books,setBooks] = useState(booksData);
+    const [books, setBooks] = useState(booksData);
 
-    function deleteBook(id){
+    function deleteBook(id) {
         // setBooks((prev) =>[...prev].filter(x => x.id !== id));
         let idx = booksData.indexOf(booksData.filter(x => x.id === id));
-        booksData.splice(idx,1);
+        booksData.splice(idx, 1);
         setBooks([...booksData]);
-      }
+    }
 
     return (
         <div className="container">
@@ -48,20 +48,20 @@ function ViewBooks() {
                                     <td>{book.description}</td>
                                     <td><div className="table__button-group">
 
-                                    <Link to={`/addBook/view/${book.id}`}>
-                                        <button id='view'>View</button>
-                                    </Link>
+                                        <Link to={`/addBook/view/${book.id}`}>
+                                            <button id='view'>View</button>
+                                        </Link>
 
-                                    <Link to={`/addBook/edit/${book.id}`}>
-                                        <button id='edit'>Edit</button>
-                                    </Link>
+                                        <Link to={`/addBook/edit/${book.id}`}>
+                                            <button id='edit'>Edit</button>
+                                        </Link>
 
                                         <button id='delete' onClick={() => {
-                                            if(window.confirm("Are you sure want to delete ?")){
+                                            if (window.confirm("Are you sure want to delete ?")) {
                                                 deleteBook(book.id);
                                             }
                                         }} >Delete</button></div></td>
-                                        
+
                                 </tr>
                             )
                         }
