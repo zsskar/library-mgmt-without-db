@@ -18,13 +18,8 @@ function ViewBooks() {
             <div className="text">
                 View Books
             </div>
-            {/* {
-        booksData.map((book,index) => <option  key= {index} value={book.bookName}>{book.bookName}</option>)
-        }  */}
-
             {books?.length > 0 ? <section>
                 <table>
-
                     <thead>
                         <tr>
                             <th>ID</th>
