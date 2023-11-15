@@ -6,7 +6,8 @@ function ViewBooks() {
 
     const [books, setBooks] = useState(booksData);
 
-    function deleteBook(id) {
+    function deleteBook(id) 
+    {
         // setBooks((prev) =>[...prev].filter(x => x.id !== id));
         let idx = booksData.indexOf(booksData.filter(x => x.id === id));
         booksData.splice(idx, 1);
