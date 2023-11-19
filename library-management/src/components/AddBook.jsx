@@ -82,7 +82,7 @@ function AddBook() {
       <div className="container">
          <NotificationContainer />
          <div className="text">
-            {params.action === undefined ? <h4>Add Book</h4> :params.action === 'edit'? <h4>Edit Book</h4> : <h4>View Book</h4>}
+            {params.action === undefined ? <h4>Add Book</h4> : params.action === 'edit' ? <h4>Edit Book</h4> : <h4>View Book</h4>}
          </div>
          <form onSubmit={(e) => submit(e)} >
             <div className="form-row" >
