@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/zsskar/library-mgmt-without-db/static/css/main.98d26eee.css",
+    "main.js": "/zsskar/library-mgmt-without-db/static/js/main.db5beea9.js",
+    "static/media/notification.svg?s3g3t9": "/zsskar/library-mgmt-without-db/static/media/notification.5d0158671dd860c714c4.svg",
+    "static/media/notification.eot": "/zsskar/library-mgmt-without-db/static/media/notification.3657084dc0419605a91c.eot",
+    "static/media/notification.woff?s3g3t9": "/zsskar/library-mgmt-without-db/static/media/notification.c392cd33d9d9de730f9d.woff",
+    "static/media/notification.ttf?s3g3t9": "/zsskar/library-mgmt-without-db/static/media/notification.c5d9251ea82e42f75381.ttf",
+    "index.html": "/zsskar/library-mgmt-without-db/index.html",
+    "main.98d26eee.css.map": "/zsskar/library-mgmt-without-db/static/css/main.98d26eee.css.map",
+    "main.db5beea9.js.map": "/zsskar/library-mgmt-without-db/static/js/main.db5beea9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98d26eee.css",
+    "static/js/main.db5beea9.js"
+  ]
+}
