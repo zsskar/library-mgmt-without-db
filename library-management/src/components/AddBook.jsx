@@ -41,7 +41,7 @@ function AddBook() {
             navigate("/addBook");
          }
       }
-   }, [params]);
+   },[params]);
 
 
 
